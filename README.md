@@ -1,4 +1,5 @@
 # DataProject1_DS2002
+## Jenny Schilling (xdj3kg)
 
 Functionality:
 
