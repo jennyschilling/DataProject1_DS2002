@@ -1,3 +1,5 @@
+USE retail_sales_dw;
+
 SELECT
     c.is_vip,
     p.product_name,
