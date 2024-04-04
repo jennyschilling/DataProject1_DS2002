@@ -13,20 +13,6 @@ quantity_sold int NOT NULL,
 sales_amount int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-# DROP TABLE `product_dim`;
-CREATE TABLE `product_dim` (
-  `product_id` varchar(15) NOT NULL,
-  `product_name` varchar(70) DEFAULT NULL,
-  `product_line` varchar(50) DEFAULT NULL,
-  `quantity_in_stock` int NOT NULL,
-  `product_price` decimal(10,2) NOT NULL,
-  PRIMARY KEY (`product_id`),
-  KEY `product_name` (`product_name`),
-  KEY `product_line` (`product_line`),
-  KEY `quantity_in_stock` (`quantity_in_stock`),
-  KEY `product_price` (`product_price`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 # DROP TABLE `customer_dim`;
 CREATE TABLE `customer_dim` (
   `customer_id` int NOT NULL,
