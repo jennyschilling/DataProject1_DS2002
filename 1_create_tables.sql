@@ -1,9 +1,9 @@
-DROP database `retail_sales_dw`;
+# DROP database `retail_sales_dw`;
 CREATE DATABASE `retail_sales_dw` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE retail_sales_dw;
 
-#DROP TABLE `sales_fact`;
+# DROP TABLE `sales_fact`;
 CREATE TABLE sales_fact (
 sale_id int NOT NULL,
 sale_date date NOT NULL,
