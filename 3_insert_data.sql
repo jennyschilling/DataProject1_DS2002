@@ -14,22 +14,6 @@ FROM classicmodels.customers;
 SELECT * FROM retail_sales_dw.customer_dim;
 
 
-TRUNCATE TABLE retail_sales_dw.product_dim;
-INSERT INTO `retail_sales_dw`.`product_dim`
-(`product_id`,
-`product_name`,
-`product_line`,
-`quantity_in_stock`,
-`product_price`)
-SELECT `productCode`,
-	`productName`,
-	`productLine`,
-	`quantityInStock`,
-	`buyPrice`
-FROM classicmodels.products;
-SELECT * FROM retail_sales_dw.product_dim;
-
-
 TRUNCATE TABLE `retail_sales_dw`.`sales_fact`;
 INSERT INTO `retail_sales_dw`.`sales_fact`
 (`sale_id`,
